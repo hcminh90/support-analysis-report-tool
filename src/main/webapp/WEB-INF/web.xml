@@ -29,6 +29,10 @@
 	<!-- <error-page> <error-code>404</error-code> <location>/WEB-INF/jsp/notfound.jsp</location> 
 		</error-page> -->
 
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
 	<error-page>
 		<location>/errors.html</location>
 	</error-page>
