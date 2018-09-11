@@ -67,6 +67,7 @@ public final class menu_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_spring_url_2(_jspx_page_context))
         return;
       out.write("'>Báo cáo swift</a></td>\r\n");
+      out.write("\t\t\t<td class=\"menu-items\"></td>\r\n");
       out.write("\t\t</tr>\r\n");
       out.write("\t</table>\r\n");
     } catch (Throwable t) {

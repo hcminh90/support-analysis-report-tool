@@ -8,30 +8,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="Sat, 01 Dec 2001 00:00:00 GMT">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	crossorigin="anonymous"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-	crossorigin="anonymous"></script>
-<script
-	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-	crossorigin="anonymous"></script>
+	href='<c:url value="/resources/css/stylesheet.css" />'>
 <link rel="stylesheet"
-	href='<c:url value="/resources/css/stylesheet.css" />' >
+	href='<c:url value="/resources/css/fm.scrollator.jquery.css" />'>
 <title><tiles:getAsString name="title"></tiles:getAsString></title>
 
-<script type="text/javascript" src='<c:url value="/resources/js/jquery-3.3.1.min.js" />'></script>
-
+<script type="text/javascript"
+	src='<c:url value="/resources/js/jquery-3.3.1.min.js" />'></script>
+<script type="text/javascript"
+	src='<c:url value="/resources/js/jquery.min.js" />'></script>
+<script type="text/javascript"
+	src='<c:url value="/resources/js/fm.scrollator.jquery.js"/>'></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 	<table class="tb-full-size" border="1">
@@ -43,7 +39,7 @@
 		</tr>
 		<tr>
 			<td class="full-height">
-				<div class="content">
+				<div class="content" id="content">
 					<div id="style-2">
 						<tiles:insertAttribute name="body" />
 					</div>
@@ -54,6 +50,26 @@
 			<td><tiles:insertAttribute name="footer" /></td>
 		</tr>
 	</table>
-
+	<script type="text/javascript">
+	 /*$(function () {
+	        $("#style-2").resizable({
+	            resize: function (event, ui) {
+	                var width = ui.size.width;
+	                var height = ui.size.height;
+	                alert(width + ',' + height);
+	                var $scrollable_div1 = $('#content');
+	        		if ($scrollable_div1.data('scrollator') == undefined) {
+	        			$scrollable_div1.scrollator();
+	        		}
+	            }
+	        });
+	    });	*/
+	    /*$(document).ready(function(){
+	        $("#style-2").resize(function(){
+	            alert("changed");
+	        });
+	    });*/
+	
+	</script>
 </body>
 </html>

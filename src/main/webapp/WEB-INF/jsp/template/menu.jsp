@@ -5,5 +5,6 @@
 			<td class="menu-items"><a href='<spring:url value="/" />'>Trang chủ</a></td>
 			<td class="menu-items"><a href='<spring:url value="/fundstransfer.html" />'>Báo cáo FT</a></td>
 			<td class="menu-items"><a href='<spring:url value="/swift.html" />'>Báo cáo swift</a></td>
+			<td class="menu-items"></td>
 		</tr>
 	</table>

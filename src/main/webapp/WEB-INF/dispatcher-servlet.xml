@@ -13,7 +13,7 @@
 
 	<mvc:annotation-driven />
 	<mvc:resources mapping="/resources/**"
-		location="/resources/" /> 
+		location="/resources/" />
 
 	<bean id="tilesConfigurer"
 		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
@@ -28,6 +28,21 @@
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 		<property name="viewClass"
 			value="org.springframework.web.servlet.view.tiles3.TilesView" />
+	</bean>
+
+	<mvc:interceptors>
+		<bean id="webContentInterceptor"
+			class="org.springframework.web.servlet.mvc.WebContentInterceptor">
+			<property name="cacheSeconds" value="0" />
+			<property name="useExpiresHeader" value="true" />
+			<property name="useCacheControlHeader" value="true" />
+			<property name="useCacheControlNoStore" value="true" />
+		</bean>
+	</mvc:interceptors>
+
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="cacheSeconds" value="0" />
 	</bean>
 
 </beans>
