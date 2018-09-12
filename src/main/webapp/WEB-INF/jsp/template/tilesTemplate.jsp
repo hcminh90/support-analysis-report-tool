@@ -4,7 +4,14 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<%@ page import = "java.io.*,java.util.*" %>
+<%@ page import = "javax.servlet.*,java.text.*" %>
+<%
+         Date dNow = new Date( );
+         SimpleDateFormat ft = 
+         new SimpleDateFormat ("yyyyMMddHHmmss");
+         
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +22,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet"
-	href='<c:url value="/resources/css/stylesheet.css" />'>
+	href='<c:url value="<%= "/resources/css/stylesheet.css?v="+session.getId()+ft.format(dNow) %>" />' >
 <link rel="stylesheet"
 	href='<c:url value="/resources/css/fm.scrollator.jquery.css" />'>
 <title><tiles:getAsString name="title"></tiles:getAsString></title>
@@ -47,7 +54,9 @@
 			</td>
 		</tr>
 		<tr class="footer">
-			<td><tiles:insertAttribute name="footer" /></td>
+			<td><tiles:insertAttribute name="footer" />
+			
+			</td>
 		</tr>
 	</table>
 	<script type="text/javascript">

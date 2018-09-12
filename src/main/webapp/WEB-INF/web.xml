@@ -32,9 +32,13 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	
+
 	<error-page>
 		<location>/errors.html</location>
 	</error-page>
+
+	<session-config>
+		<session-timeout>5</session-timeout>
+	</session-config>
 
 </web-app>
