@@ -3,6 +3,10 @@ package org.apache.jsp.WEB_002dINF.jsp.template;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.io.*;
+import java.util.*;
+import javax.servlet.*;
+import java.text.*;
 
 public final class tilesTemplate_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -57,6 +61,14 @@ public final class tilesTemplate_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
+
+         Date dNow = new Date( );
+         SimpleDateFormat ft = 
+         new SimpleDateFormat ("yyyyMMddHHmmss");
+         
+
+      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html lang=\"en\">\r\n");
       out.write("<head>\r\n");
@@ -68,9 +80,18 @@ public final class tilesTemplate_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\tcontent=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n");
       out.write("<link rel=\"stylesheet\"\r\n");
       out.write("\thref='");
-      if (_jspx_meth_c_url_0(_jspx_page_context))
+      //  c:url
+      org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_url_0 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _jspx_tagPool_c_url_value_nobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
+      _jspx_th_c_url_0.setPageContext(_jspx_page_context);
+      _jspx_th_c_url_0.setParent(null);
+      _jspx_th_c_url_0.setValue( "/resources/css/stylesheet.css?v="+session.getId()+ft.format(dNow) );
+      int _jspx_eval_c_url_0 = _jspx_th_c_url_0.doStartTag();
+      if (_jspx_th_c_url_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        _jspx_tagPool_c_url_value_nobody.reuse(_jspx_th_c_url_0);
         return;
-      out.write("'>\r\n");
+      }
+      _jspx_tagPool_c_url_value_nobody.reuse(_jspx_th_c_url_0);
+      out.write("' >\r\n");
       out.write("<link rel=\"stylesheet\"\r\n");
       out.write("\thref='");
       if (_jspx_meth_c_url_1(_jspx_page_context))
@@ -129,7 +150,9 @@ public final class tilesTemplate_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\t\t\t<td>");
       if (_jspx_meth_tiles_insertAttribute_3(_jspx_page_context))
         return;
-      out.write("</td>\r\n");
+      out.write("\r\n");
+      out.write("\t\t\t\r\n");
+      out.write("\t\t\t</td>\r\n");
       out.write("\t\t</tr>\r\n");
       out.write("\t</table>\r\n");
       out.write("\t<script type=\"text/javascript\">\r\n");
@@ -166,24 +189,6 @@ public final class tilesTemplate_jsp extends org.apache.jasper.runtime.HttpJspBa
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
-  }
-
-  private boolean _jspx_meth_c_url_0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:url
-    org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_url_0 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _jspx_tagPool_c_url_value_nobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
-    _jspx_th_c_url_0.setPageContext(_jspx_page_context);
-    _jspx_th_c_url_0.setParent(null);
-    _jspx_th_c_url_0.setValue("/resources/css/stylesheet.css");
-    int _jspx_eval_c_url_0 = _jspx_th_c_url_0.doStartTag();
-    if (_jspx_th_c_url_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_c_url_value_nobody.reuse(_jspx_th_c_url_0);
-      return true;
-    }
-    _jspx_tagPool_c_url_value_nobody.reuse(_jspx_th_c_url_0);
-    return false;
   }
 
   private boolean _jspx_meth_c_url_1(PageContext _jspx_page_context)
