@@ -4,27 +4,30 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page import = "java.io.*,java.util.*" %>
-<%@ page import = "javax.servlet.*,java.text.*" %>
+<%@ page import="java.io.*,java.util.*"%>
+<%@ page import="javax.servlet.*,java.text.*"%>
 <%
-         Date dNow = new Date( );
-         SimpleDateFormat ft = 
-         new SimpleDateFormat ("yyyyMMddHHmmss");
-         
+	Date dNow = new Date();
+	SimpleDateFormat ft = new SimpleDateFormat("yyyyMMddHHmmss");
 %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="Sat, 01 Dec 2001 00:00:00 GMT">
+<meta http-equiv="cache-control" content="max-age=0">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 11:00:00 GMT">
+<meta http-equiv="pragma" content="no-cache">
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet"
-	href='<c:url value="<%= "/resources/css/stylesheet.css?v="+session.getId()+ft.format(dNow) %>" />' >
+	href='<c:url value="<%="/resources/css/stylesheet.css?v=" + session.getId() + ft.format(dNow)%>" />'>
 <link rel="stylesheet"
 	href='<c:url value="/resources/css/fm.scrollator.jquery.css" />'>
+<link href='<c:url value="/resources/css/font-awesome.css" />'
+	rel="stylesheet">
 <title><tiles:getAsString name="title"></tiles:getAsString></title>
 
 <script type="text/javascript"
@@ -34,7 +37,7 @@
 <script type="text/javascript"
 	src='<c:url value="/resources/js/fm.scrollator.jquery.js"/>'></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 	<table class="tb-full-size" border="1">
@@ -54,31 +57,28 @@
 			</td>
 		</tr>
 		<tr class="footer">
-			<td><tiles:insertAttribute name="footer" />
-			
-			</td>
+			<td><tiles:insertAttribute name="footer" /></td>
 		</tr>
 	</table>
 	<script type="text/javascript">
-	 /*$(function () {
-	        $("#style-2").resizable({
-	            resize: function (event, ui) {
-	                var width = ui.size.width;
-	                var height = ui.size.height;
-	                alert(width + ',' + height);
-	                var $scrollable_div1 = $('#content');
-	        		if ($scrollable_div1.data('scrollator') == undefined) {
-	        			$scrollable_div1.scrollator();
-	        		}
-	            }
-	        });
-	    });	*/
-	    /*$(document).ready(function(){
-	        $("#style-2").resize(function(){
-	            alert("changed");
-	        });
-	    });*/
-	
+		/*$(function () {
+		       $("#style-2").resizable({
+		           resize: function (event, ui) {
+		               var width = ui.size.width;
+		               var height = ui.size.height;
+		               alert(width + ',' + height);
+		               var $scrollable_div1 = $('#content');
+		       		if ($scrollable_div1.data('scrollator') == undefined) {
+		       			$scrollable_div1.scrollator();
+		       		}
+		           }
+		       });
+		   });	*/
+		/*$(document).ready(function(){
+		    $("#style-2").resize(function(){
+		        alert("changed");
+		    });
+		});*/
 	</script>
 </body>
 </html>

@@ -37,6 +37,7 @@ html, body {
 
 .menu-items{
 	padding:5px 5px 5px 5px;
+	width: 150px;
 }
 
 .header-content{
@@ -67,3 +68,43 @@ html, body {
 	cursor: pointer;
 	color: #3366ff;
 }
+
+.mainmenu {
+    color: #FFFFFF;
+    font-family: "Times New Roman",Times,Serif;
+    font-size: 18px;
+    height: 50px;
+    background: none repeat scroll 0 0 #f00940;
+}
+.mainmenu ul {margin: 0; padding: 0; }
+.mainmenu li i { padding-left: 6px;color: #a30328;}
+.mainmenu li { float: left; display: block; border-right: 1px solid #ffffff; cursor: pointer; padding-right: 15px;}
+.mainmenu li:last-child{ border-right:none;}
+.mainmenu li span {  font-size: 12px; color: #f5f7f8;}
+.mainmenu li a:visited{color:#FFFFFF}
+.mainmenu li a {text-decoration: none;color:#FFFFFF}
+
+.mainmenu li, .mainmenu li i, .mainmenu li main, .mainmenu li span {
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+}
+
+.mainmenu li:hover main { 
+	margin-left: 10px; 
+   -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.mainmenu li:hover span { 
+	margin-left: 25px; 
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.mainmenu li:hover { background: #a30328; }
+.mainmenu li:hover i {color: #ffffff;}
