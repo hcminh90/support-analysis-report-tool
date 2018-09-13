@@ -2,5 +2,7 @@ C:\Users\minhhc.HDBANK\Documents\workspace-sts-3.9.5.RELEASE\support-analysis-re
 C:\Users\minhhc.HDBANK\Documents\workspace-sts-3.9.5.RELEASE\support-analysis-report-tool\src\main\java\support\analysis\config\WebAppInitializer.java
 C:\Users\minhhc.HDBANK\Documents\workspace-sts-3.9.5.RELEASE\support-analysis-report-tool\src\main\java\support\analysis\controller\handlerException.java
 C:\Users\minhhc.HDBANK\Documents\workspace-sts-3.9.5.RELEASE\support-analysis-report-tool\src\main\java\support\analysis\controller\indexController.java
+C:\Users\minhhc.HDBANK\Documents\workspace-sts-3.9.5.RELEASE\support-analysis-report-tool\src\main\java\support\analysis\interceptor\TraceInterceptor.java
 C:\Users\minhhc.HDBANK\Documents\workspace-sts-3.9.5.RELEASE\support-analysis-report-tool\src\main\java\support\analysis\config\WebMvcConfig.java
+C:\Users\minhhc.HDBANK\Documents\workspace-sts-3.9.5.RELEASE\support-analysis-report-tool\src\main\java\support\analysis\interceptor\PerformanceInterceptor.java
 C:\Users\minhhc.HDBANK\Documents\workspace-sts-3.9.5.RELEASE\support-analysis-report-tool\src\main\java\support\analysis\cache\handlerCache.java

@@ -7,7 +7,7 @@
 					<td><i class="icon-home icon-large"></i>&nbsp;</td>
 					<td><div>
 							<main>
-							<a href='<spring:url value="/" />'>Home</a></main>
+							<a href='<spring:url value="/" />'><spring:message code="label.menu.home" /></a></main>
 						</div>
 						<span>Dashbroad</span></td>
 				</tr>
