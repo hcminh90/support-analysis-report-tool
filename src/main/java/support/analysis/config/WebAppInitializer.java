@@ -14,6 +14,7 @@ public class WebAppInitializer implements WebApplicationInitializer{
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		// TODO Auto-generated method stub
 		 LOGGER.info("Application starting...");
+		
 	}
 
 }

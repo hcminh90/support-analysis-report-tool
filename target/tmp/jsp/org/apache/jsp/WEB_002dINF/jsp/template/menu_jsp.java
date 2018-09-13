@@ -53,23 +53,82 @@ public final class menu_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\r\n");
       out.write("\r\n");
-      out.write("\t<table class=\"tb-full-size\">\r\n");
-      out.write("\t\t<tr>\r\n");
-      out.write("\t\t\t<td class=\"menu-items\"><a href='");
+      out.write("<div class=\"mainmenu\">\r\n");
+      out.write("\t<ul>\r\n");
+      out.write("\t\t<li><table>\r\n");
+      out.write("\t\t\t\t<tr>\r\n");
+      out.write("\t\t\t\t\t<td><i class=\"icon-home icon-large\"></i>&nbsp;</td>\r\n");
+      out.write("\t\t\t\t\t<td><div>\r\n");
+      out.write("\t\t\t\t\t\t\t<main>\r\n");
+      out.write("\t\t\t\t\t\t\t<a href='");
       if (_jspx_meth_spring_url_0(_jspx_page_context))
         return;
-      out.write("'>Trang chủ</a></td>\r\n");
-      out.write("\t\t\t<td class=\"menu-items\"><a href='");
+      out.write("'>Home</a></main>\r\n");
+      out.write("\t\t\t\t\t\t</div>\r\n");
+      out.write("\t\t\t\t\t\t<span>Dashbroad</span></td>\r\n");
+      out.write("\t\t\t\t</tr>\r\n");
+      out.write("\t\t\t</table></li>\r\n");
+      out.write("\t\t<li><table>\r\n");
+      out.write("\t\t\t\t<tr>\r\n");
+      out.write("\t\t\t\t\t<td><i class=\"icon-home icon-large\"></i>&nbsp;</td>\r\n");
+      out.write("\t\t\t\t\t<td><div>\r\n");
+      out.write("\t\t\t\t\t\t\t<main>\r\n");
+      out.write("\t\t\t\t\t\t\t<a href='");
       if (_jspx_meth_spring_url_1(_jspx_page_context))
         return;
-      out.write("'>Báo cáo FT</a></td>\r\n");
-      out.write("\t\t\t<td class=\"menu-items\"><a href='");
-      if (_jspx_meth_spring_url_2(_jspx_page_context))
-        return;
-      out.write("'>Báo cáo swift</a></td>\r\n");
-      out.write("\t\t\t<td class=\"menu-items\"></td>\r\n");
-      out.write("\t\t</tr>\r\n");
-      out.write("\t</table>\r\n");
+      out.write("'>Fund\r\n");
+      out.write("\t\t\t\t\t\t\t\tTransfer</a></main>\r\n");
+      out.write("\t\t\t\t\t\t</div>\r\n");
+      out.write("\t\t\t\t\t\t<span>SWIFT, CITAD, VCBMoney</span></td>\r\n");
+      out.write("\t\t\t\t</tr>\r\n");
+      out.write("\t\t\t</table></li>\r\n");
+      out.write("\t\t<li><table>\r\n");
+      out.write("\t\t\t\t<tr>\r\n");
+      out.write("\t\t\t\t\t<td><i class=\"icon-user icon-large\"></i>&nbsp;</td>\r\n");
+      out.write("\t\t\t\t\t<td><div>\r\n");
+      out.write("\t\t\t\t\t\t\t<main>About Us</main>\r\n");
+      out.write("\t\t\t\t\t\t</div>\r\n");
+      out.write("\t\t\t\t\t\t<span>what we do</span></td>\r\n");
+      out.write("\t\t\t\t</tr>\r\n");
+      out.write("\t\t\t</table></li>\r\n");
+      out.write("\t\t<li><table>\r\n");
+      out.write("\t\t\t\t<tr>\r\n");
+      out.write("\t\t\t\t\t<td><i class=\"icon-gear icon-large\"></i>&nbsp;</td>\r\n");
+      out.write("\t\t\t\t\t<td><div>\r\n");
+      out.write("\t\t\t\t\t\t\t<main>Our Services</main>\r\n");
+      out.write("\t\t\t\t\t\t</div>\r\n");
+      out.write("\t\t\t\t\t\t<span>what we provide</span></td>\r\n");
+      out.write("\t\t\t\t</tr>\r\n");
+      out.write("\t\t\t</table></li>\r\n");
+      out.write("\t\t<li><table>\r\n");
+      out.write("\t\t\t\t<tr>\r\n");
+      out.write("\t\t\t\t\t<td><i class=\"icon-briefcase icon-large\"></i>&nbsp;</td>\r\n");
+      out.write("\t\t\t\t\t<td><div>\r\n");
+      out.write("\t\t\t\t\t\t\t<main>Portofolio</main>\r\n");
+      out.write("\t\t\t\t\t\t</div>\r\n");
+      out.write("\t\t\t\t\t\t<span>our work</span></td>\r\n");
+      out.write("\t\t\t\t</tr>\r\n");
+      out.write("\t\t\t</table></li>\r\n");
+      out.write("\t\t<li><table>\r\n");
+      out.write("\t\t\t\t<tr>\r\n");
+      out.write("\t\t\t\t\t<td><i class=\"icon-comments icon-large\"></i>&nbsp;</td>\r\n");
+      out.write("\t\t\t\t\t<td><div>\r\n");
+      out.write("\t\t\t\t\t\t\t<main>Blog</main>\r\n");
+      out.write("\t\t\t\t\t\t</div>\r\n");
+      out.write("\t\t\t\t\t\t<span>Just Share</span></td>\r\n");
+      out.write("\t\t\t\t</tr>\r\n");
+      out.write("\t\t\t</table></li>\r\n");
+      out.write("\t\t<li><table>\r\n");
+      out.write("\t\t\t\t<tr>\r\n");
+      out.write("\t\t\t\t\t<td><i class=\"icon-tint icon-large\"></i>&nbsp;</td>\r\n");
+      out.write("\t\t\t\t\t<td><div>\r\n");
+      out.write("\t\t\t\t\t\t\t<main>Contact</main>\r\n");
+      out.write("\t\t\t\t\t\t</div>\r\n");
+      out.write("\t\t\t\t\t\t<span>How to reach</span></td>\r\n");
+      out.write("\t\t\t\t</tr>\r\n");
+      out.write("\t\t\t</table></li>\r\n");
+      out.write("\t</ul>\r\n");
+      out.write("</div>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -131,32 +190,6 @@ public final class menu_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspx_th_spring_url_1.doFinally();
       _jspx_tagPool_spring_url_value_nobody.reuse(_jspx_th_spring_url_1);
-    }
-    return false;
-  }
-
-  private boolean _jspx_meth_spring_url_2(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  spring:url
-    org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_2 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
-    _jspx_th_spring_url_2.setPageContext(_jspx_page_context);
-    _jspx_th_spring_url_2.setParent(null);
-    _jspx_th_spring_url_2.setValue("/swift.html");
-    int[] _jspx_push_body_count_spring_url_2 = new int[] { 0 };
-    try {
-      int _jspx_eval_spring_url_2 = _jspx_th_spring_url_2.doStartTag();
-      if (_jspx_th_spring_url_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        return true;
-      }
-    } catch (Throwable _jspx_exception) {
-      while (_jspx_push_body_count_spring_url_2[0]-- > 0)
-        out = _jspx_page_context.popBody();
-      _jspx_th_spring_url_2.doCatch(_jspx_exception);
-    } finally {
-      _jspx_th_spring_url_2.doFinally();
-      _jspx_tagPool_spring_url_value_nobody.reuse(_jspx_th_spring_url_2);
     }
     return false;
   }
